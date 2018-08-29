@@ -18,4 +18,12 @@ public class PersonOOPTest {
         String actual = person.toString();
         assertEquals(expect, actual);
     }
+
+    @Test
+    public void testClassStaff() {
+        Staff person = new Staff("John", "USA", "A", 2);
+        String expect = "Staff has name: John address: USA school: A pay: 2.0";
+        String actual = person.toString();
+        assertEquals(expect, actual);
+    }
 }
